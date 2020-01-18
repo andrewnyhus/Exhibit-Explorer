@@ -1,0 +1,17 @@
+{
+  "exhibit_a": {
+    "exhibit_key": "exhibit_a",
+    "title": "Exhibit A",
+    "content": "heres some fake content for exhibit a"
+  },
+  "exhibit_b": {
+    "exhibit_key": "exhibit_b",
+    "title": "Exhibit B",
+    "content": "heres some fake content for exhibit b"
+  },
+  "exhibit_c": {
+    "exhibit_key": "exhibit_c",
+    "title": "Exhibit C",
+    "content": "heres some fake content for exhibit c"
+  }
+}
