@@ -36,9 +36,9 @@ export const ExhibitExplorerNav = (props) => {
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
                 <Form inline>
-                    <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={ScannerPopover}>
+//                    <OverlayTrigger trigger="click" rootClose placement="bottom" overlay={ScannerPopover}>
                         <Button variant="light">Scan Barcode</Button>
-                    </OverlayTrigger>
+ //                   </OverlayTrigger>
                 </Form>
                 <Nav.Link href="/exhibit/list">Exhibits</Nav.Link>
             </Nav>
