@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Iterates through and parses any args
+# that were passed to the script.
+parse_input_args() {
+    for input_arg in "$@"
+    do
+        parse_any_do_not_build_args $input_arg
+        # ... do whatever other parsing
+    done
+}
+
+parse_input_args $@
+
+# npm install
+# npm run build
+# copy build to docs folder
