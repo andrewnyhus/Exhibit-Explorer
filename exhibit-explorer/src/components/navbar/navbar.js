@@ -3,42 +3,26 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-// import Popover from "react-bootstrap/Popover";
-import {ExhibitScan} from "../exhibit/exhibit-scan/exhibit-scan";
+import {ExhibitScan} from "../scan/exhibit-scan";
 import Modal from "react-bootstrap/Modal";
+import { FaQrcode, FaHome } from "react-icons/fa";
 
 export const ExhibitExplorerNav = (props) => {
 
 
     const BrandComponent = () => (
         <Navbar.Brand href="/">
-            Exhibit Explorer
+            <FaHome/>
         </Navbar.Brand>
     );
     const NavbarToggle = () => <Navbar.Toggle aria-controls="basic-navbar-nav" />;
-    // const
-    // const popoverStyles = {
-    //     maxWidth: 'min(75vw, 75vh)',
-    //     width: 'min(75vw, 75vh)',
-    //     maxHeight: 'min(75vw, 75vh)',
-    //     height: 'min(75vw, 75vh)'
-    // };
-    // const ScannerPopover = (
-    //     <Popover id="popover-basic">
-    //         <Popover.Title as="h3">[Insert Scanner Title]</Popover.Title>
-    //         <Popover.Content style={popoverStyles}>
-    //             <ExhibitScan/>
-    //         </Popover.Content>
-    //     </Popover>
-    // );
 
     const ScannerModal = () => {
         const [show, setShow] = useState(false);
 
         const handleClose = () => setShow(false);
         const handleShow = () => setShow(true);
-        const OpenModalButton = () => <Button variant="primary" onClick={handleShow}>Scan</Button>;
+        const OpenModalButton = () => <Button variant="primary" onClick={handleShow}>Scan <FaQrcode/></Button>;
 
         const ModalHeader = () => (
             <Modal.Header closeButton>

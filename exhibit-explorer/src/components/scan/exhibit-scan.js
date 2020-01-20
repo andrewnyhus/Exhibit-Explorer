@@ -1,7 +1,7 @@
 import React from "react";
 import QrReader from 'react-qr-reader';
 
-import exhibitsData from "../exhibits";
+import exhibitsData from "../exhibit/exhibits";
 
 export const ExhibitScan = () => {
     const isValidExhibitUrl = (url) => {
